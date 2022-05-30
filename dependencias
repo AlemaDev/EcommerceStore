@@ -1,0 +1,6 @@
+django // this is obvious
+django-rest-framework // it is used to create the api in the backend
+django-cors-headers // allows us to connect the backend with the frontend
+djoser // it makes creating users, tokens, etc. a lot easier
+pillow // to resize images
+stripe // for payments

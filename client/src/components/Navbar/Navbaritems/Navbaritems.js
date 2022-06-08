@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 const Navbaritems = () => {
   return (
@@ -12,10 +13,10 @@ const Navbaritems = () => {
         <li class="mr-4 hover:text-gray-900 md:mr-6 ">Ayuda</li>
       </ul>
       <ul class='flex flex-wrap items-center mt-3 text-sm sm:mt-0'>
-        <li class="mr-4 hover:text-gray-900 md:mr-6 ">Crea tu cuenta</li>
-        <li class="mr-4 hover:text-gray-900 md:mr-6 ">Ingresa</li>
-        <li class="mr-4 hover:text-gray-900 md:mr-6 ">Mis compras</li>
-        <li class="mr-4 hover:text-gray-900 md:mr-6 ">cart</li>
+      <Link to={'/auth'}><li class="mr-4 hover:text-gray-900 md:mr-6 " >Crea tu cuenta</li></Link>
+      <Link to={'/auth'}><li class="mr-4 hover:text-gray-900 md:mr-6 " >Ingresa</li></Link>
+      <Link to={'/auth'}><li class="mr-4 hover:text-gray-900 md:mr-6 ">Mis compras</li></Link>
+      <Link to={'/auth'}><li class="mr-4 hover:text-gray-900 md:mr-6 ">cart</li></Link>
       </ul>
     </div>
   )

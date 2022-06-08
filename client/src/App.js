@@ -1,15 +1,23 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Footer from './components/Footer/Footer';
-import Login from './components/Login/Login';
+import Auth from './components/Auth/Auth';
 import Navbar from './components/Navbar/Navbar';
-import Register from './components/Register/Register';
+import Home from './components/Home/Home';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar/>
+          <Routes>
+              <Route path="/" exact element={<Home />} />
+              <Route path="/auth" exact element={<Auth />} />
+          </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

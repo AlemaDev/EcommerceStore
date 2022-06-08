@@ -6,7 +6,10 @@ import Register from './components/Register/Register';
 
 function App() {
   return (
-    <Navbar/>
+    <div>
+      <Navbar/>
+      <Footer />
+    </div>
   );
 }
 

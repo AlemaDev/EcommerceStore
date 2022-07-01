@@ -3,6 +3,7 @@ import './App.css';
 
 import Footer from './components/Footer/Footer';
 import Auth from './components/Auth/Auth';
+import NewAccount from './components/Auth/NewAccount/NewAccount';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 
@@ -13,7 +14,8 @@ function App() {
         <Navbar/>
           <Routes>
               <Route path="/" exact element={<Home />} />
-              <Route path="/auth" exact element={<Auth />} />
+              <Route path="/login" exact element={<Auth />} />
+              <Route path="/signup" exact element={<NewAccount />} />
           </Routes>
         <Footer />
       </div>

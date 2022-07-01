@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const NewAccount = () => {
 return (
-  <div class="flex flex-col bg-gray-100">
+  <div class="flex flex-col bg-gray-100 flex-grow">
       
-      <div class="grid place-items-center mx-2 my-20">
+      <div class="grid place-items-center mx-2 my-16">
           <div class="w-11/12 p-12 sm:w-8/12 md:w-6/12 lg:w-5/12 2xl:w-4/12 
               px-6 py-10 sm:px-10 sm:py-6 
               bg-white rounded-lg shadow-md lg:shadow-lg">
@@ -59,7 +59,7 @@ return (
                   </button>
   
                  
-                  <div class="sm:flex flex-col sm:flex-wrap sm:mb-4 text-sm text-center">
+                  <div class="sm:flex flex-col sm:flex-wrap sm:mb-4 text-sm text-center mt-4">
   
                       <p class="text-gray-500 text-md sm:my-auto">
                           or
